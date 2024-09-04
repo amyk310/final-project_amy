@@ -1,10 +1,8 @@
 ---
 title: "Final project"
-author: "Amy Kim"
-format: 
-html:
+format:
+	html:
 theme: sandstone
-	
 ---
 
 This is R bootcamp final project, providing descriptive statistics, regression analysis, and histogram on a prospective, randomized, placebo-controlled clinical trial, Streptomycin Treatment of Pulmonary Tuberculosis. Data source: https://github.com/higgi13425/medicaldata/tree/master/data
