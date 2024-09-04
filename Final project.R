@@ -12,7 +12,7 @@ tb <- read_csv(here("strep_tb.csv"))
 
 # Create a {gtsummary} table of descriptive statistics about your data (1 pt)
 
-tbl_summary(
+table1<-tbl_summary(
 	tb,
 	by = gender,
 	include = c(gender, arm, dose_strep_g, baseline_condition, baseline_cavitation, strep_resistance, improved),
@@ -42,7 +42,8 @@ tbl_regression(
 	))
 
 #Create a figure (1 pt)
-hist(tb$rad_num, main = "Numeric Rating of Chest X-ray at Month 6",
+
+hist(tb$rad_num, main = "Rating of Chest X-ray at Month 6",
 		 xlab = "Rating",
 		 ylab = "Frequency")
 
@@ -66,6 +67,9 @@ linear_model_int <- lm(improved ~ gender*arm + baseline_condition + baseline_cav
 
 new_table_function(linear_model_int)
 
-#Create and render a quarto document
+#mode of Rating of Chest X-ray at Month 6
 
-inline_text()
+mode_value<- mode(tb$rad_num)
+
+#file path for final project
+project_file_path<- here("R","Final project.html")

@@ -1,7 +1,9 @@
 ---
 title: "Final project"
+author: "Amy Kim"
 format:
-	html:
+  html:
+    embed-resources: true
 theme: sandstone
 ---
 
