@@ -4,10 +4,6 @@ author: "Amy Kim"
 format: 
 html:
 theme: sandstone
-execute:
-	eval: true
-	echo: false
-	error: true
 	
 ---
 
