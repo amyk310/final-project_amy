@@ -35,9 +35,10 @@ table1<-tbl_summary(
 		strep_resistance ~ "Streptomycin Resistance at 6m",
 		improved ~ "Outcome of Improved"
 	))
-
+table1
+meanvalue<-mean(tb$rad_num)
 ```
-There were `r inline_text(table1, variable = "gender", column = "F")` female participants in this study.
+The median value is ` r meanvalue` years
 
 ```{r}
 #| label: tbl-regression
