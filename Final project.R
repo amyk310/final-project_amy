@@ -24,6 +24,7 @@ table1<-tbl_summary(
 		strep_resistance ~ "Streptomycin Resistance at 6m",
 		improved ~ "Outcome of Improved"
 	))
+table1
 
 #Fit a regression and present well-formatted results from the regression (1 pt)
 library(broom)
@@ -67,9 +68,9 @@ linear_model_int <- lm(improved ~ gender*arm + baseline_condition + baseline_cav
 
 new_table_function(linear_model_int)
 
-#mode of Rating of Chest X-ray at Month 6
-
+#mode and mean of Rating of Chest X-ray at Month 6
 mode_value<- mode(tb$rad_num)
+mean_value<-mean(tb$rad_num)
 
 #file path for final project
 project_file_path<- here("R","Final project.html")

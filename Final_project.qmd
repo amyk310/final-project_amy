@@ -100,7 +100,7 @@ new_table_function(linear_model_int)
 
 
 ```{r}
-  mode_value<- mode(tb$rad_num)
+mode_value<- mode(tb$rad_num)
 mean_value<-mean(tb$rad_num)
 ```
 Mode of Rating of Chest X-ray at Month 6 is `r mode_value`.
